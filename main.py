@@ -2,6 +2,8 @@ from tweet import tweet
 from time import time,sleep
 from tweepy.error import TweepError
 
+#:)
+
 DAY_IN_SECONDS = 86400.0
 
 if __name__ == '__main__':

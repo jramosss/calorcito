@@ -1,10 +1,10 @@
 from utils import leftingDaysForSummer
 import tweepy as tw
 from os import environ
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from datetime import datetime
 
-load_dotenv('.env')
+#load_dotenv('.env')
 
 KEY = environ["API_KEY"]
 SECRET = environ["API_SECRET_KEY"]
