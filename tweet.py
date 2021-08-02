@@ -2,6 +2,7 @@ from utils import leftingDaysForSummer
 import tweepy as tw
 from os import environ
 from dotenv import load_dotenv
+from datetime import datetime
 
 load_dotenv('.env')
 
@@ -15,9 +16,13 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 
 api = tw.API(auth)
 
+def log (msg):
+    now = datetime.now().ctime()
+    print(now, " Tweeted ", msg)
 
 def tweet ():
     lefting_days = leftingDaysForSummer()
 
     if lefting_days != None:
         api.update_status(lefting_days)
+        log(lefting_days)
