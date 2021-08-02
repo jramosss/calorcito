@@ -44,4 +44,4 @@ def leftingDaysForSummer ():
     if not (today_number in st.SPRING or today_number in st.WINTER or today_number in st.AUTUMN):
         return None
     else:
-        return summer_date - today
+        return int(str(summer_date - today).split(' ')[0])
