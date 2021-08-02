@@ -15,4 +15,5 @@ if __name__ == '__main__':
         except TweepError:
             # This exception ocurrs if the same tweet is already tweeted
             # So we just let the day pass
+            print("Taking the day off beacuse a tweet with that body is already posted")
             sleep(DAY_IN_SECONDS - ((time() - starttime) % DAY_IN_SECONDS))
