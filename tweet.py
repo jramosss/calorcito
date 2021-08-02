@@ -15,7 +15,9 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 
 api = tw.API(auth)
 
-lefting_days = leftingDaysForSummer()
 
-if lefting_days != None:
-    api.update_status(lefting_days)
+def tweet ():
+    lefting_days = leftingDaysForSummer()
+
+    if lefting_days != None:
+        api.update_status(lefting_days)
